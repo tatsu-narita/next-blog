@@ -12,5 +12,9 @@
 @media (hover: none) {
     .list a {
         -webkit-tap-highlight-color: transparent;
-        }
     }
+
+    .list a:active {
+        color: ver(--accent);
+    }
+}
