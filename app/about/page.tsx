@@ -1,6 +1,7 @@
 import Container from 'components/container'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
+import Contact from 'components/contact'
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
       <p>今までと違うものを作ることで愛着が湧いてきます。そこで興味を持った事は小さな事でもいいから取り入れて、良いものを作れる様にしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。</p>
       </PostBody>
       
+      <Contact />
     </Container>
   )
 }
