@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
 
-export default function Social( iconSize = 'initial' ) {
+export default function Social({ iconSize = 'initial' }) {
     return (
         <ul className={styles.list} style={{ '--icon-size': iconSize }}>
             <li>
