@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 //サイトに関する情報
 import {siteMeta} from 'lib/constants'
@@ -20,11 +20,18 @@ export default function Meta({ pageTitle, pageDesc }) {
             <title>{title}</title>
             <meta property="og:title" content={title} />
 
-            <mata name="description" content={desc} />
+            <meta name="description" content={desc} />
             <meta property="og:description" content={desc} />
 
             <link rel="canonical" href={url} />
             <meta property="og:url" content={url} />
+
+            <meta property="og:site_name" content={siteTitle} />
+            <meta property="og:type" content={siteType} />
+            <meta property="og:locale" content={siteLocale} />
+
+            <link rel="icon" href={siteIcon} />
+            <link rel="apple-touch-icon" href={siteIcon} />
         </Head>
     )
 }
