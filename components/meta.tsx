@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 //サイトに関する情報
 import {siteMeta} from 'lib/constants'
