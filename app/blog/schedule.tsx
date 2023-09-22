@@ -9,6 +9,7 @@ export async function getStaticProps() {
         endpoint: 'blogs'
     })
     console.log(resPromise)
+    resPromise.then((res) => console.log(res)).catch((err) => console.log(err))
 
     console.log('処理1')
     setTimeout(() => console.log('処理2'), 1000)
