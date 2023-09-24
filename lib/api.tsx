@@ -5,8 +5,8 @@ export const client = createClient({
     apikey: process.env.API_KEY,
 })
 
-export async function getPostBySlug(sulg) {
-    tly {
+export async function getPostBySlug(slug) {
+    try {
         const post = await client.get({
             endpoint: 'blogs'
             queries: { filters: 'slug[equals]${slug}' },
