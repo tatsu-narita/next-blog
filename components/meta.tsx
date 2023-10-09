@@ -1,7 +1,7 @@
-use client
+
 
 import Head from "next/head";
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/router"
 
 //サイトに関する情報
 import {siteMeta} from 'lib/constants'
@@ -17,8 +17,8 @@ export default function Meta({ pageTitle, pageDesc,pageImg, pageImgW, pageImgH }
     const desc = pageDesc ?? siteDesc
 
     //ページのURL
-    const router = useRouter()
-    const url = '${siteUrl}${router.asPath}'
+    const router = useRouter();
+    const url = '${siteUrl}${navigation.asPath}'
 
     //0GP画像
     const img = pageImg || siteImg.src
