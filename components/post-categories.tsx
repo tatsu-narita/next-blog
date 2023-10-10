@@ -17,8 +17,8 @@ export default function PostCategories({ categories }) {
                             <a>{name}</a>
                         </link>
                     </li>
-            ))}
-        </ul>
+                ))}
+            </ul>
         </div>
     )
 }
